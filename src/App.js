@@ -6,6 +6,7 @@ import reducers from "./reducers";
 import firebase from "firebase";
 import ReduxThunk from "redux-thunk";
 import LoginForm from "./components/LoginForm";
+import Router from "./Router";
 
 type Props = {};
 export default class App extends Component<Props> {
@@ -26,7 +27,7 @@ export default class App extends Component<Props> {
 
     return (
       <Provider store={store}>
-        <LoginForm />
+        <Router />
       </Provider>
     );
   }
